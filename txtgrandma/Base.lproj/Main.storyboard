@@ -17,43 +17,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mh-xk-w5H">
-                                <rect key="frame" x="68" y="489" width="238" height="55"/>
-                                <state key="normal" image="start-button"/>
-                                <connections>
-                                    <action selector="startTextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aBt-x5-Wg6"/>
-                                    <segue destination="CWO-fu-BFp" kind="show" id="gwC-S2-KNa"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grandma-face" translatesAutoresizingMaskIntoConstraints="NO" id="HQp-z3-aeL">
-                                <rect key="frame" x="112.5" y="100" width="150" height="150"/>
+                                <rect key="frame" x="112" y="46" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="MoN-Do-ONo"/>
                                     <constraint firstAttribute="height" constant="150" id="X8v-XJ-ery"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NyE-QH-Wq1">
-                                <rect key="frame" x="90" y="311" width="194" height="30"/>
+                                <rect key="frame" x="90" y="257" width="194" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" id="G2b-vh-WiG"/>
                                     <constraint firstAttribute="height" constant="30" id="em8-bz-Xf3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Grandma's Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcq-R0-Ewq">
-                                <rect key="frame" x="90" y="275" width="194" height="21"/>
+                                <rect key="frame" x="90" y="221" width="194" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mh-xk-w5H">
+                                <rect key="frame" x="68" y="329" width="238" height="55"/>
+                                <state key="normal" image="start-button"/>
+                                <connections>
+                                    <action selector="startTextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aBt-x5-Wg6"/>
+                                    <segue destination="CWO-fu-BFp" kind="show" id="gwC-S2-KNa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NyE-QH-Wq1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-7.5" id="CRF-x9-y2a"/>
+                            <constraint firstItem="NyE-QH-Wq1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-61.5" id="CRF-x9-y2a"/>
                             <constraint firstItem="Xcq-R0-Ewq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dol-CB-PKe"/>
                             <constraint firstItem="NyE-QH-Wq1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rfr-fi-23s"/>
-                            <constraint firstItem="4Mh-xk-w5H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="183" id="VO5-98-vSg"/>
+                            <constraint firstItem="4Mh-xk-w5H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="23" id="VO5-98-vSg"/>
                             <constraint firstItem="NyE-QH-Wq1" firstAttribute="top" secondItem="Xcq-R0-Ewq" secondAttribute="bottom" constant="15" id="lw9-uK-BSe"/>
                             <constraint firstItem="HQp-z3-aeL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m2S-BB-1gk"/>
                             <constraint firstItem="4Mh-xk-w5H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qjb-Sb-7IK"/>

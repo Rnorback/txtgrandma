@@ -20,6 +20,7 @@ class InitVC: UIViewController, UITextViewDelegate {
     
     @IBAction func startTextButtonPressed(sender: AnyObject) {
         let timer = NSTimer.scheduledTimerWithTimeInterval(20, target: self, selector: #selector(InitVC.sendLocalNotification), userInfo: nil, repeats: true)
+        
     }
     
     func sendLocalNotification() {
