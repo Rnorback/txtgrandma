@@ -21,6 +21,7 @@
                                 <rect key="frame" x="68" y="489" width="238" height="55"/>
                                 <state key="normal" image="start-button"/>
                                 <connections>
+                                    <action selector="startTextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aBt-x5-Wg6"/>
                                     <segue destination="CWO-fu-BFp" kind="show" id="gwC-S2-KNa"/>
                                 </connections>
                             </button>
@@ -60,6 +61,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bnh-tW-VWP"/>
+                    <connections>
+                        <outlet property="phoneTextField" destination="NyE-QH-Wq1" id="Dw5-no-J7f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

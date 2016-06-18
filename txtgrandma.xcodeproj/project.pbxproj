@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		938C94FA1D14E85E00EAEC0F /* StopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938C94F91D14E85E00EAEC0F /* StopVC.swift */; };
+		938C94FC1D14EAD300EAEC0F /* GrandmaWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938C94FB1D14EAD300EAEC0F /* GrandmaWeb.swift */; };
 		93E830E01D14E44D00783044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E830DF1D14E44D00783044 /* AppDelegate.swift */; };
 		93E830E21D14E44D00783044 /* InitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E830E11D14E44D00783044 /* InitVC.swift */; };
 		93E830E51D14E44D00783044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E830E31D14E44D00783044 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		2934933E4817DA8881AB63A8 /* Pods-txtgrandma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-txtgrandma.release.xcconfig"; path = "Pods/Target Support Files/Pods-txtgrandma/Pods-txtgrandma.release.xcconfig"; sourceTree = "<group>"; };
 		938C94F91D14E85E00EAEC0F /* StopVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopVC.swift; sourceTree = "<group>"; };
+		938C94FB1D14EAD300EAEC0F /* GrandmaWeb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrandmaWeb.swift; sourceTree = "<group>"; };
 		93E830DC1D14E44D00783044 /* txtgrandma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = txtgrandma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E830DF1D14E44D00783044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93E830E11D14E44D00783044 /* InitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitVC.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				93E830DF1D14E44D00783044 /* AppDelegate.swift */,
 				93E830E11D14E44D00783044 /* InitVC.swift */,
 				938C94F91D14E85E00EAEC0F /* StopVC.swift */,
+				938C94FB1D14EAD300EAEC0F /* GrandmaWeb.swift */,
 				93E830E31D14E44D00783044 /* Main.storyboard */,
 				93E830E61D14E44D00783044 /* Assets.xcassets */,
 				93E830E81D14E44D00783044 /* LaunchScreen.storyboard */,
@@ -216,6 +219,7 @@
 				93E830E21D14E44D00783044 /* InitVC.swift in Sources */,
 				93E830E01D14E44D00783044 /* AppDelegate.swift in Sources */,
 				938C94FA1D14E85E00EAEC0F /* StopVC.swift in Sources */,
+				938C94FC1D14EAD300EAEC0F /* GrandmaWeb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
