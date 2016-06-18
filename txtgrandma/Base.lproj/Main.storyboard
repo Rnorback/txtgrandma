@@ -25,10 +25,10 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grandma-face" translatesAutoresizingMaskIntoConstraints="NO" id="HQp-z3-aeL">
-                                <rect key="frame" x="121.5" y="117" width="132" height="133"/>
+                                <rect key="frame" x="112.5" y="100" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="132" id="MoN-Do-ONo"/>
-                                    <constraint firstAttribute="height" constant="133" id="X8v-XJ-ery"/>
+                                    <constraint firstAttribute="width" constant="150" id="MoN-Do-ONo"/>
+                                    <constraint firstAttribute="height" constant="150" id="X8v-XJ-ery"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NyE-QH-Wq1">
