@@ -1,25 +1,124 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pmp-jl-xDY">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--InitVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InitVC" customModule="txtgrandma" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mh-xk-w5H">
+                                <rect key="frame" x="68" y="489" width="238" height="55"/>
+                                <state key="normal" image="start-button"/>
+                                <connections>
+                                    <segue destination="CWO-fu-BFp" kind="show" id="gwC-S2-KNa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grandma-face" translatesAutoresizingMaskIntoConstraints="NO" id="HQp-z3-aeL">
+                                <rect key="frame" x="121.5" y="117" width="132" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="MoN-Do-ONo"/>
+                                    <constraint firstAttribute="height" constant="133" id="X8v-XJ-ery"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NyE-QH-Wq1">
+                                <rect key="frame" x="90" y="311" width="194" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="194" id="G2b-vh-WiG"/>
+                                    <constraint firstAttribute="height" constant="30" id="em8-bz-Xf3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Grandma's Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcq-R0-Ewq">
+                                <rect key="frame" x="90" y="275" width="194" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NyE-QH-Wq1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-7.5" id="CRF-x9-y2a"/>
+                            <constraint firstItem="Xcq-R0-Ewq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dol-CB-PKe"/>
+                            <constraint firstItem="NyE-QH-Wq1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rfr-fi-23s"/>
+                            <constraint firstItem="4Mh-xk-w5H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="183" id="VO5-98-vSg"/>
+                            <constraint firstItem="NyE-QH-Wq1" firstAttribute="top" secondItem="Xcq-R0-Ewq" secondAttribute="bottom" constant="15" id="lw9-uK-BSe"/>
+                            <constraint firstItem="HQp-z3-aeL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m2S-BB-1gk"/>
+                            <constraint firstItem="4Mh-xk-w5H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qjb-Sb-7IK"/>
+                            <constraint firstItem="Xcq-R0-Ewq" firstAttribute="top" secondItem="HQp-z3-aeL" secondAttribute="bottom" constant="25" id="wg3-rz-vfV"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Bnh-tW-VWP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="811.5" y="1020.5"/>
+        </scene>
+        <!--StopVC-->
+        <scene sceneID="NhT-AN-PlW">
+            <objects>
+                <viewController id="CWO-fu-BFp" customClass="StopVC" customModule="txtgrandma" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qg6-37-hNb"/>
+                        <viewControllerLayoutGuide type="bottom" id="hC6-qR-zte"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ure-N3-r9n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xz8-j1-N7H">
+                                <rect key="frame" x="68" y="305.5" width="238" height="55"/>
+                                <state key="normal" image="stop-button"/>
+                                <connections>
+                                    <action selector="stopButtonPressed:" destination="CWO-fu-BFp" eventType="touchUpInside" id="2Lb-S5-VhE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xz8-j1-N7H" firstAttribute="centerY" secondItem="Ure-N3-r9n" secondAttribute="centerY" id="5iv-Z4-Sba"/>
+                            <constraint firstItem="xz8-j1-N7H" firstAttribute="centerX" secondItem="Ure-N3-r9n" secondAttribute="centerX" id="Y51-UN-khA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TBo-Eu-zLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1303.5" y="1015.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LMc-Qm-11A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="pmp-jl-xDY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4f4-sz-xdr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dCH-zo-Zlr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJF-XT-OaU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="250" y="1009"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="grandma-face" width="111" height="111"/>
+        <image name="start-button" width="238" height="55"/>
+        <image name="stop-button" width="238" height="55"/>
+    </resources>
 </document>
